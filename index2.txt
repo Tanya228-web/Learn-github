@@ -1,2 +1,9 @@
-first file
-second file
+function login () {
+    const {username, password} = req.body
+    if (!username) {
+        return
+    }
+
+    save({username, password})
+    return setResponse (-1, {username})
+}
