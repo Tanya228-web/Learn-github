@@ -1,2 +1,10 @@
-first file
-i'm Gaurav
+function login () {
+    const {username, password} = req.body
+    if (!username) {
+        return
+    }
+
+    save({username, password})
+    return setResponse (-1, {username})
+}
+i'm Gaurav!!!!
